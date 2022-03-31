@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family:  messina-sans;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: white !important;
+    font-size: .75rem;
+  }
+  
+  /* header */
+  
+  .header {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background-color: black;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /* background-color: #fff; */
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    /* border-right: 1px solid #f4f4f4; */
+    text-decoration: none;
+    font-size: 1.2rem !important;
+  }
+  
+  /* .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  } */
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  .flex-container{
+      background-color: black;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      color: #f4f4f4;
+      font-family: messina-sans;
+      font-size: .85rem;
+  }
+
+  .flex-container  div{
+      margin: 24px;
+      max-width: 20%;
+  }
+
+  .flex-container div img{
+      width: 100%;
+  }
+
+  .flex-container div p{
+    font-size: .9rem;
+    color: grey;
+    margin: 14px;
+  }
+
+  .flex-container div h5{
+    font-family: messina-sans;
+    font-size: .85rem;
+    margin: 14px;
+  }
+/* gallery css start */
+  .flex-container-gallery{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #f4f4f4;
+    font-family: messina-sans;
+    font-size: .85rem;
+  }
+  
+  .flex-container-gallery  div{
+    max-width: 33.33%;
+  }
+
+  .flex-container-gallery div img{
+    width: 100%;
+  }
+
+  .flex-container-gallery div h4{
+    padding: 10px;
+    text-align: center;
+  }
+
+  #header-gallery{
+    background-image: url("C:/Users/Sunil/Desktop/DiscoveryApp/assets/jael-rodriguez.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 548px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer li a{
+    width: 100%;
+    font-family: messina-sans;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -.01em;
+  }
+  @media (min-width: 824px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
